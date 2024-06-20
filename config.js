@@ -17,9 +17,9 @@ HEROKU_APP_NAME: process.env.HEROKU_APP_NAME === undefined ? 'TAIFUR-X ' : proce
 ANTI_LINK: process.env.ANTI_LINK === undefined ? 'false' : process.env.ANTI_LINK,
 AUTO_REACT: process.env.AUTO_REACT === undefined ? 'true' : process.env.AUTO_REACT,
 PREFIX: process.env.PREFIX === undefined ? '.' : process.env.PREFIX ,
-AI_MODE: process.env.AI_MODE === undefined ? 'true' : process.env.AI_MODE,
-BOT_DETECT: process.env.BOT_DETECT === undefined ? 'false' : process.env.BOT_DETECT,
-ANTI_BOT: process.env.ANTI_BOT === undefined ? 'false' : process.env.ANTI_BOT ,
+AI_MODE: process.env.AI_MODE === undefined ? 'false : process.env.AI_MODE,
+BOT_DETECT: process.env.BOT_DETECT === undefined ? 'true : process.env.BOT_DETECT,
+ANTI_BOT: process.env.ANTI_BOT === undefined ? 'false : process.env.ANTI_BOT ,
 INBOX_USER: process.env.INBOX_USER === undefined ? '94778962038' : process.env.INBOX_USER,
 BANNED_USER: process.env.BANNED_USER === undefined ? '94767438882' : process.env.BANNED_USER ,
 
