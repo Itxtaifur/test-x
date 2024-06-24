@@ -53,7 +53,7 @@ console.log("🔒 Session Successfully Loaded !!")
 const express = require("express");
 const { clear } = require('console')
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8000;
 //====================================
 
 async function connectToWA() {
@@ -64,7 +64,7 @@ const conn = makeWASocket({
 version,
 logger: pino({ level: 'silent' }),
 printQRInTerminal: true,
-browser: ['chrome', '121.0.6167.159'], 
+browser:   ["TAIFUR-X 2.1", "safari", "3.3"],
 auth: state,
 getMessage: async (key) => {
             if (store) {
