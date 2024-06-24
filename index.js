@@ -64,7 +64,7 @@ const conn = makeWASocket({
 version,
 logger: pino({ level: 'silent' }),
 printQRInTerminal: true,
-browser: [Device, 'chrome', '121.0.6167.159'], 
+browser: ['chrome', '121.0.6167.159'], 
 auth: state,
 getMessage: async (key) => {
             if (store) {
