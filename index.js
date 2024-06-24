@@ -64,7 +64,7 @@ const conn = makeWASocket({
 version,
 logger: pino({ level: 'silent' }),
 printQRInTerminal: true,
-browser: browsers.windows('Firefox'), 
+browser: ['Firefox'], 
 auth: state,
 getMessage: async (key) => {
             if (store) {
