@@ -11,7 +11,7 @@
 
 ## Support Group
 
-- [Join (Only Access for Taifur) ]([https://chat.whatsapp.com/LQl6KiXpphT4suHq3mzfbq](https://chat.whatsapp.com/JYWh2a462ZJHgdULBXmT5X))
+- [Join (Only Access for Taifur) ]([https://chat.whatsapp.com/JYWh2a462ZJHgdULBXmT5X])
 
 ## Own
 
