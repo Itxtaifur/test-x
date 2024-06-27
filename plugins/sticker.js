@@ -29,7 +29,7 @@ let media = await quoted.download()
 const sticker = new Sticker(media , {
     pack: data , // The pack name
     author: datas , // The author name
-    type: StickerTypes.'FULL', // The sticker type
+    type: StickerTypes.FULL, // The sticker type
     categories: ['🤩', '🎉'], // The sticker category
     id: '12345', // The sticker id
     quality: 50, // The quality of the output file
