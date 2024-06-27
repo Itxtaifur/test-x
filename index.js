@@ -226,7 +226,7 @@ await conn.sendMessage(from, { react: { text: `⛓`, key: mek.key }})
 if ( !isGroup && isCmd && !isDev && !isCreator && !isPersUser ) return 
       }
       
-   if ( config.WORK_TYPE == "private" ) {
+   if ( config.WORK_TYPE == "" ) {
 if  ( isCmd && !isDev && !isCreator ) return
       }
       
