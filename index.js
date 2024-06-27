@@ -229,9 +229,9 @@ if ( !isGroup && isCmd && !isDev && !isCreator && !isPersUser ) return
    if ( config.WORK_TYPE == "private" ) {
 if  ( isCmd && !isDev && !isCreator ) return
       }
-   if ( CONFIG.WORK_TYPE == "public" ) {
+   if ( config.WORK_TYPE == "public" ) {
 if  ( !isGroup && isCmd && !isDev && !isCreator && !isPersUser ) return 
-      }
+   }
 
 if ( isCmd && isBanUser ) return reply('❌ *You are banned from using Commands.....* ⚠️\n\n*_Please contact Bot Owner or Moderator to Remove your Ban_* 👨‍🔧')
 
