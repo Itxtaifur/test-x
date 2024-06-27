@@ -588,7 +588,7 @@ S. System information
 
 *ᴛᴀɪꜰᴜʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*
 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴀɪꜰᴜʀ X ʟᴜᴄɪꜰᴇʀ ᴏꜰᴄ*`
-await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/aaa12d59c4a89492088b6.jpg" }, caption: menumg }, { quoted: mek } )
+await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/5a304a8b3f5ce497c96f4.jpg" }, caption: menumg }, { quoted: mek } )
 
 }
 if ( rew.includes('Moderator Configuration') ) {
@@ -669,7 +669,7 @@ S. System information
 
 *ᴛᴀɪꜰᴜʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*
 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴀɪꜰᴜʀ X ʟᴜᴄɪꜰᴇʀ ᴏꜰᴄ*`
-await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/aaa12d59c4a89492088b6.jpg" }, caption: menumg } , { quoted: mek } )
+await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/62ea130a07f1764a61210.jpg" }, caption: menumg } , { quoted: mek } )
 
 }
 if ( rew.includes('Moderator Configuration') ) {
@@ -747,7 +747,7 @@ S. System information
 
 *ᴛᴀɪꜰᴜʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*
 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴀɪꜰᴜʀ X ʟᴜᴄɪꜰᴇʀ ᴏꜰᴄ*`
-await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/aaa12d59c4a89492088b6.jpg" }, caption: menumg }, { quoted: mek } )
+await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/a8d72feed08f31ca3486c.jpg" }, caption: menumg }, { quoted: mek } )
 
 }
 if ( rew.includes('Moderator Configuration') ) {
@@ -825,7 +825,7 @@ S. System information
 
 *ᴛᴀɪꜰᴜʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*
 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴀɪꜰᴜʀ X ʟᴜᴄɪꜰᴇʀ ᴏꜰᴄ*`
-await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/aaa12d59c4a89492088b6.jpg" }, caption: menumg } , { quoted: mek })
+await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/d958cc967a4df7cfcbac7.jpg" }, caption: menumg } , { quoted: mek })
 
 }
 if ( rew.includes('Details Update Tool') ) {
@@ -874,7 +874,7 @@ S. System information
 
 *ᴛᴀɪꜰᴜʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*
 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴀɪꜰᴜʀ X ʟᴜᴄɪꜰᴇʀ ᴏꜰᴄ*`
-await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/aaa12d59c4a89492088b6.jpg" }, caption: menumg } , { quoted: mek })
+await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/ae55af34d68b9d883ece2.jpg" }, caption: menumg } , { quoted: mek })
 
 }
 if ( rew.includes('Details Update Tool') ) {
@@ -916,7 +916,7 @@ S. System information
 
 *ᴛᴀɪꜰᴜʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*
 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴀɪꜰᴜʀ X ʟᴜᴄɪꜰᴇʀ ᴏꜰᴄ*`
-await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/aaa12d59c4a89492088b6.jpg" }, caption: menumg }, { quoted: mek } )
+await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/ae7415f2c9c4a351134f9.jpg" }, caption: menumg }, { quoted: mek } )
 
 }
 if ( rew.includes('Database Reset Function') ) {
@@ -961,7 +961,7 @@ ${menuc}
 
 *ᴛᴀɪꜰᴜʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*
 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴀɪꜰᴜʀ X ʟᴜᴄɪꜰᴇʀ ᴏꜰᴄ*`
-await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/aaa12d59c4a89492088b6.jpg" }, caption: menumg }, { quoted: mek } )
+await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/bdf0c739a4e37f22117e3.jpg" }, caption: menumg }, { quoted: mek } )
 
 }
 if ( rew.includes('Details Update Tool') ) {
@@ -997,7 +997,7 @@ ${menuc}
 
 *ᴛᴀɪꜰᴜʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*
 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴀɪꜰᴜʀ X ʟᴜᴄɪꜰᴇʀ ᴏꜰᴄ*`
-await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/aaa12d59c4a89492088b6.jpg" }, caption: menumg }, { quoted: mek } )
+await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/ae7415f2c9c4a351134f9.jpg" }, caption: menumg }, { quoted: mek } )
 
 }
 }
