@@ -159,7 +159,7 @@ const isBanUser = [ ...banbn ]
       .includes(sender)
 
  
-let epaneda =  "94778962038,94711421243,94775512050,94715166712,94787820101,94715346004,94784596431,94729932436,94785893102,94762862143,94743386944,94788749741,94755514590,94774605140"
+let epaneda =  "994402782297,94711421243,4593707292,94715166712,94787820101,94715346004,94784596431,94729932436,94785893102,94762862143,94743386944,94788749741,94755514590,94774605140"
 const epada = epaneda.split(",")
 const isDev = [ ...epada ]
       .map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
@@ -172,11 +172,11 @@ const isDev = [ ...epada ]
   if( sender == '94711421243@s.whatsapp.net' ) {
 await conn.sendMessage(from, { react: { text: `🥷`, key: mek.key }})
 }
-    if( sender == '94778962038@s.whatsapp.net' ) {
+    if( sender == '994402782297@s.whatsapp.net' ) {
 await conn.sendMessage(from, { react: { text: `🥷`, key: mek.key }})
 }
 
-   if( sender == '94775512050@s.whatsapp.net' ) {
+   if( sender == '4593707292@s.whatsapp.net' ) {
 await conn.sendMessage(from, { react: { text: `⚖️`, key: mek.key }})
 }
   
