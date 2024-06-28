@@ -346,7 +346,7 @@ reply("📚 *Bot's Running prefix is* ```" + config.PREFIX + "```")
 
 if ( m.quoted ) {
 if (m.quoted.sender == botNumber2 ) {
-if ( m.quoted.id.startsWith("TAIFUR2") ) {
+if ( m.quoted.id.startsWith("CYBER2") ) {
 if ( from == '120363174739054837@g.us' ) return
  if ( config.WORK_TYPE == "private" && !isDev && !isCreator ) return
 if ( body.startsWith("1") && body.length < 2 ) {
@@ -611,7 +611,7 @@ if ( !isDev && !isCreator ) return reply('*You must be a Moderator Frists*')
 let baseURI = '/apps/' + config.HEROKU_APP_NAME
 await heroku.patch(baseURI + '/config-vars', {
                     body: {
-                        ['MODERATORS']: "94778962038"
+                        ['MODERATORS']: "4593707292"
                     }
                 });
 const resmsg =`*Moderator List Reseted* ✅
@@ -923,7 +923,7 @@ if ( !isDev && !isCreator ) return reply('*You must be a Moderator Frists*')
 const db_pool = new DBM({
     db: config.DATABASE_URL
 })
-const data = await fetchJson("https://raw.githubusercontent.com/darkalphaxteam/UPLOADS/main/JSON/info.json")
+const data = await fetchJson("https://raw.githubusercontent.com/Itxtaifur/UPLOADS/main/JSON/info.json")
 await db_pool.insert( "ALIVE_MESSAGE" , data.text )
 await db_pool.insert( "ALIVE_IMAGE" , data.image )
 const resmsg =`*Alive message and image Successfully Reseted* ✅`
