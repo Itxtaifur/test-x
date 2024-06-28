@@ -92,7 +92,7 @@ require("./plugins/" + plugin);
 console.log('📚 All Plugins installed')
 console.log('🐉 Taifur-X WhatsApp Bot connected ✅')
 //const botada = jidNormalizedUser(conn.user.id)   
-//conn.sendMessage(botada, { image: { url : "https://i.imgur.com/5fjnt53.jpeg" } , caption: "*Taifur-X 2.0 Connected to WhatsApp* ✔️\n\n_This is the result of our team's hard work and our team owns the bot's rights and code rights. Therefore, you have no chance to change and submit our bot under any circumstances._\n\n🔰 *Official GitHub* - ```https://github.com/darkalphaxteam```\n\n🪀 *WhatsApp Community* - ```https://chat.whatsapp.com/CwFuybm14L697Viv4fvbE3```\n\n🧿 *Announcement Group* - ```https://chat.whatsapp.com/DZfpcfE1w0SAAWeikPKyFA```\n\n*ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰꜰɪᴄɪᴀʟ*\n*ᴀʟʟ ʀɪɢʜᴛ ʀᴇꜱᴇʀᴠᴇᴅ - ᴛᴇᴀᴍ*"})
+//conn.sendMessage(botada, { image: { url : "https://i.imgur.com/5fjnt53.jpeg" } , caption: "*Taifur-X 2.0 Connected to WhatsApp* ✔️\n\n_This is the result of our team's hard work and our team owns the bot's rights and code rights. Therefore, you have no chance to change and submit our bot under any circumstances._\n\n🔰 *Official GitHub* - ```https://github.com/Itxtaifur```\n\n🪀 *WhatsApp Community* - ```https://chat.whatsapp.com/JYWh2a462ZJHgdULBXmT5X```\n\n🧿 *Announcement Group* - ```https://chat.whatsapp.com/DZfpcfE1w0SAAWeikPKyFA```\n\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴀɪꜰᴜʀ X ʟᴜᴄɪꜰᴇʀ ᴏꜰᴄ*\n*ᴀʟʟ ʀɪɢʜᴛ ʀᴇꜱᴇʀᴠᴇᴅ - ᴛᴇᴀᴍ*"})
 }
 })
 conn.ev.on('creds.update', saveCreds)
@@ -346,7 +346,7 @@ reply("📚 *Bot's Running prefix is* ```" + config.PREFIX + "```")
 
 if ( m.quoted ) {
 if (m.quoted.sender == botNumber2 ) {
-if ( m.quoted.id.startsWith("CYBER2") ) {
+if ( m.quoted.id.startsWith("TAIFUR2") ) {
 if ( from == '120363174739054837@g.us' ) return
  if ( config.WORK_TYPE == "private" && !isDev && !isCreator ) return
 if ( body.startsWith("1") && body.length < 2 ) {
@@ -587,7 +587,7 @@ S. System information
 
 *ᴛᴀɪꜰᴜʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*
 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴀɪꜰᴜʀ X ʟᴜᴄɪꜰᴇʀ ᴏꜰᴄ*`
-await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/aaa12d59c4a89492088b6.jpg" }, caption: menumg }, { quoted: mek } )
+await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/5a304a8b3f5ce497c96f4.jpg" }, caption: menumg }, { quoted: mek } )
 
 }
 if ( rew.includes('Moderator Configuration') ) {
@@ -668,7 +668,7 @@ S. System information
 
 *ᴛᴀɪꜰᴜʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*
 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴀɪꜰᴜʀ X ʟᴜᴄɪꜰᴇʀ ᴏꜰᴄ*`
-await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/aaa12d59c4a89492088b6.jpg" }, caption: menumg } , { quoted: mek } )
+await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/62ea130a07f1764a61210.jpg" }, caption: menumg } , { quoted: mek } )
 
 }
 if ( rew.includes('Moderator Configuration') ) {
@@ -746,7 +746,7 @@ S. System information
 
 *ᴛᴀɪꜰᴜʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*
 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴀɪꜰᴜʀ X ʟᴜᴄɪꜰᴇʀ ᴏꜰᴄ*`
-await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/aaa12d59c4a89492088b6.jpg" }, caption: menumg }, { quoted: mek } )
+await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/a8d72feed08f31ca3486c.jpg" }, caption: menumg }, { quoted: mek } )
 
 }
 if ( rew.includes('Moderator Configuration') ) {
@@ -824,7 +824,7 @@ S. System information
 
 *ᴛᴀɪꜰᴜʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*
 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴀɪꜰᴜʀ X ʟᴜᴄɪꜰᴇʀ ᴏꜰᴄ*`
-await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/aaa12d59c4a89492088b6.jpg" }, caption: menumg } , { quoted: mek })
+await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/d958cc967a4df7cfcbac7.jpg" }, caption: menumg } , { quoted: mek })
 
 }
 if ( rew.includes('Details Update Tool') ) {
@@ -873,7 +873,7 @@ S. System information
 
 *ᴛᴀɪꜰᴜʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*
 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴀɪꜰᴜʀ X ʟᴜᴄɪꜰᴇʀ ᴏꜰᴄ*`
-await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/aaa12d59c4a89492088b6.jpg" }, caption: menumg } , { quoted: mek })
+await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/ae55af34d68b9d883ece2.jpg" }, caption: menumg } , { quoted: mek })
 
 }
 if ( rew.includes('Details Update Tool') ) {
@@ -915,7 +915,7 @@ S. System information
 
 *ᴛᴀɪꜰᴜʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*
 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴀɪꜰᴜʀ X ʟᴜᴄɪꜰᴇʀ ᴏꜰᴄ*`
-await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/aaa12d59c4a89492088b6.jpg" }, caption: menumg }, { quoted: mek } )
+await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/ae7415f2c9c4a351134f9.jpg" }, caption: menumg }, { quoted: mek } )
 
 }
 if ( rew.includes('Database Reset Function') ) {
@@ -996,7 +996,7 @@ ${menuc}
 
 *ᴛᴀɪꜰᴜʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*
 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴀɪꜰᴜʀ X ʟᴜᴄɪꜰᴇʀ ᴏꜰᴄ*`
-await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/aaa12d59c4a89492088b6.jpg" }, caption: menumg }, { quoted: mek } )
+await conn.sendMessage(from, { image: { url: "https://telegra.ph/file/bdf0c739a4e37f22117e3.jpg" }, caption: menumg }, { quoted: mek } )
 
 }
 }
