@@ -7,6 +7,7 @@ downloadContentFromMessage,
 jidNormalizedUser,
 getContentType
 } = require('@whiskeysockets/baileys')
+const bot = require(__dirname + '/lib/amd') 
 const fs = require('fs')
 const P = require('pino')
 const pino = require('pino')
