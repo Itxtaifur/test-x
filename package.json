@@ -69,10 +69,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Itxtaifur/TAIFUR-X-WHATSAPP-BOT"
+        "url": "git+https://github.com/taifurjutt/test-x"
     },
     "bugs": {
-        "url": "https://github.com/Itxtaifur/TAIFUR-X-WHATSAPP-BOT"
+        "url": "https://github.com/taifurjutt/test-x"
     },
-    "homepage": "https://github.com/Itxtaifur/TAIFUR-X-WHATSAPP-BOT"
+    "homepage": "https://github.com/taifurjutt/test-x"
 }
