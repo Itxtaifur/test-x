@@ -40,7 +40,7 @@ const heroku = new Heroku({
 console.log("✔️ SQL Database Connected")
 
 // ===========SESSION===========
-if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
+if (!fs.existsSync(__dirname + '/lib/amd')) {
 if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
 const sessdata = config.SESSION_ID.split("Taifur-X@;;;")[1]
 const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
