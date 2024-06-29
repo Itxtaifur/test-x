@@ -1,7 +1,7 @@
 {
     "name": "TAIFUR-X 2.0",
     "description": "ᴛᴀɪꜰᴜʀ-x ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ",
-    "repository": "https://github.com/Itxtaifur/TAIFUR-X-WHATSAPP-BOT",
+    "repository": "https://github.com/taifurjutt/test-x",
     "logo": "https://telegra.ph/file/a4477f85294cf81b725eb.jpg",
     "keywords": [
         "nodejs",
@@ -13,7 +13,7 @@
     "env": {
         "SESSION_ID": {
             "description": "Type the Session-ID you got from scaning QR",
-            "required": false,
+            "required": true,
             "value": ""
         },
         "DATABASE_URL": {
