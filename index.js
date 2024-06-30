@@ -11,7 +11,9 @@ const fs = require('fs')
 const P = require('pino')
 const pino = require('pino')
 const config = require('./config')
-const qrcode = require('qrcode-terminal')
+const Qrcode = require('qrcode')
+const PastebinAPI = require('pastebin-js'),
+pastebin = new PastebinAPI('EMWTMkQAVfJa9kM-MRUrxd5Oku1U7pgL')
 const dl = require('@bochilteam/scraper')
 const { DBM } = require('postgres_dbm')
 const util = require('util')
@@ -42,7 +44,7 @@ console.log("✔️ SQL Database Connected")
 // ===========SESSION===========
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
 if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
-const sessdata = config.SESSION_ID.split("Taifur-X@;;;")[1]
+const sessdata = config.SESSION_ID.split("")[1]
 const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
 if(err) throw err
@@ -52,7 +54,7 @@ console.log("🔒 Session Successfully Loaded !!")
 // <<==========PORTS===========>>
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 5000;
 //====================================
 
 async function connectToWA() {
@@ -62,8 +64,8 @@ console.log(`🤖 Taifur-X using WA v${version.join('.')}, isLatest: ${isLatest}
 const conn = makeWASocket({
 version,
 logger: pino({ level: 'silent' }),
-printQRInTerminal: true,
-browser: ["Taifur-X 2.1", "safari", "3.3"],
+printQRInTerminal: false,
+browser: Browsers.baileys("Desktop"),
 auth: state,
 getMessage: async (key) => {
             if (store) {
