@@ -54,6 +54,7 @@ console.log("🔒 Session Successfully Loaded !!")
 // <<==========PORTS===========>>
 const express = require("express");
 const app = express();
+const Boom  = require("@hapi/boom");
 const port = process.env.PORT || 5000;
 //====================================
 
