@@ -7,12 +7,11 @@ downloadContentFromMessage,
 jidNormalizedUser,
 getContentType
 } = require('@whiskeysockets/baileys')
-const bot = require(__dirname + '/lib/amd') 
 const fs = require('fs')
 const P = require('pino')
 const pino = require('pino')
 const config = require('./config')
-const qrcode = require('qrcode-terminal')
+let {toBuffer} = require('qrcode')
 const dl = require('@bochilteam/scraper')
 const { DBM } = require('postgres_dbm')
 const util = require('util')
@@ -41,19 +40,36 @@ const heroku = new Heroku({
 console.log("✔️ SQL Database Connected")
 
 // ===========SESSION===========
-if (!fs.existsSync(__dirname + '/lib/amd')) {
-if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
-const sessdata = config.SESSION_ID.split("Taifur-X@;;;")[1]
-const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
-filer.download((err, data) => {
-if(err) throw err
-fs.writeFile(__dirname + '/auth_info_baileys/creds.json', data, () => {
-console.log("🔒 Session Successfully Loaded !!")
-})})}
+if (fs.existsSync('./auth_info_baileys')) {
+    fs.emptyDirSync(__dirname + '/auth_info_baileys');
+  };
+  
+  app.use("/", async(req, res) => {
+
+  const { default: SuhailWASocket, useMultiFileAuthState, Browsers, delay,DisconnectReason, makeInMemoryStore, } = require("@whiskeysockets/baileys");
+  const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
+  async function SUHAIL() {
+    const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys')
+    try {
+      let Smd =SuhailWASocket({ 
+        printQRInTerminal: false,
+        logger: pino({ level: "silent" }), 
+        browser: Browsers.baileys("Desktop"),
+        auth: state 
+        });
+        Smd.ev.on("connection.update", async (s) => {
+        const { connection, lastDisconnect, qr } = s;
+        if (qr) { res.end(await toBuffer(qr)); }
+
+
+        if (connection == "open"){
+          await delay(3000);
+          let user = Smd.user.id;
 // <<==========PORTS===========>>
+const { Boom } = require("@hapi/boom");
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 5000;
 //====================================
 
 async function connectToWA() {
@@ -63,8 +79,8 @@ console.log(`🤖 Taifur-X using WA v${version.join('.')}, isLatest: ${isLatest}
 const conn = makeWASocket({
 version,
 logger: pino({ level: 'silent' }),
-printQRInTerminal: true,
-browser: ["Taifur-X 2.1", "safari", "3.3"],
+printQRInTerminal: false,
+browser: Browsers.baileys("Desktop"),
 auth: state,
 getMessage: async (key) => {
             if (store) {
