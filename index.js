@@ -8,7 +8,7 @@ jidNormalizedUser,
 getContentType
 } = require('@whiskeysockets/baileys')
 const fs = require('fs')
-const P = require('pino')
+const p = require('pino')
 const pino = require('pino')
 const config = require('./config')
 let {toBuffer} = require('qrcode')
@@ -44,13 +44,13 @@ if (fs.existsSync('./auth_info_baileys')) {
     fs.emptyDirSync(__dirname + '/auth_info_baileys');
   };
   
-  app.use("/", async(req, res) => {
-
-  const { default: SuhailWASocket, useMultiFileAuthState, Browsers, delay,DisconnectReason, makeInMemoryStore, } = require("@whiskeysockets/baileys");
+  app.use("/"), async(req, res) => {
+  }
+  const { default: SuhailWASocket, useMultiFileAuthState, Browsers, delay,DisconnectReason, makeInMemoryStore, } = require("@whiskeysockets/baileys")
   const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
   async function SUHAIL() {
     const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys')
-    try {
+    try }
       let Smd =SuhailWASocket({ 
         printQRInTerminal: false,
         logger: pino({ level: "silent" }), 
@@ -64,9 +64,10 @@ if (fs.existsSync('./auth_info_baileys')) {
 
         if (connection == "open"){
           await delay(3000);
-          let user = Smd.user.id;
+          let user = Smd.user.id;}
+
 // <<==========PORTS===========>>
-const { Boom } = require("@hapi/boom");
+const Boom = require("@hapi/boom")
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 5000;
