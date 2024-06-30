@@ -1,12 +1,5 @@
-const {
-default: makeWASocket,
-useMultiFileAuthState,
-fetchLatestBaileysVersion,
-DisconnectReason,
-downloadContentFromMessage,
-jidNormalizedUser,
-getContentType
-} = require('@whiskeysockets/baileys')
+
+const { default: SuhailWASocket, useMultiFileAuthState, Browsers, delay,DisconnectReason, makeInMemoryStore, } = require('@whiskeysockets/baileys')
 const fs = require('fs')
 const p = require('pino')
 const pino = require('pino')
@@ -46,7 +39,6 @@ if (fs.existsSync('./auth_info_baileys')) {
   
   app.use("/"), async(req, res) => {
   }
-  const { default: SuhailWASocket, useMultiFileAuthState, Browsers, delay,DisconnectReason, makeInMemoryStore, } = require("@whiskeysockets/baileys")
   const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
   async function SUHAIL() {
     const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys')
