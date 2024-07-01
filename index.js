@@ -63,7 +63,7 @@ const conn = makeWASocket({
 version,
 logger: pino({ level: 'silent' }),
 printQRInTerminal: true,
-browser: ["Taifur-X 2.1", "safari", "3.3"],
+browser: Browsers.windows('Firefox'), // for this issues https://github.com/WhiskeySockets/Baileys/issues/328
 auth: state,
 getMessage: async (key) => {
             if (store) {
