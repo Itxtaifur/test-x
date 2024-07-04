@@ -54,7 +54,7 @@ async function start() {
             logger: pino({
                 level: 'silent'
             }),
-            printQRInTerminal: false,
+            printQRInTerminal: true ,
             browser: ['TAIFUR-X | 2.0', 'Web', '1.0.0'],
             auth: state,
             version
@@ -106,7 +106,7 @@ console.log(`🤖 Cyber-X using WA v${version.join('.')}, isLatest: ${isLatest}`
 const conn = makeWASocket({
 version,
 logger: pino({ level: 'silent' }),
-printQRInTerminal: false,
+printQRInTerminal: true ,
 browser: ['TAIFUR-X | 2.0', 'Web', '1.0.0'],
 auth: state,
 getMessage: async (key) => {
@@ -960,8 +960,4 @@ reply(util.format(err));
 const isError = String(e)
 console.log(isError)}
 })
-}
-app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
-setTimeout(() => {
-connectToWA()
-}, 3000);
+} 
