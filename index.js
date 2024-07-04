@@ -36,7 +36,7 @@ const heroku = new Heroku({
 })
 
 console.log("✔️ SQL Database Connected")
-
+/*
 ===========SESSION===========
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
 if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
@@ -51,7 +51,7 @@ if(err) throw err
 fs.writeFile(__dirname + '/auth_info_baileys/creds.json', data, () => {
 console.log("🔒 Session Successfully Loaded !!")
 })})}
-
+*
 // <<==========PORTS===========>>
 const express = require("express");
 const app = express();
