@@ -96,9 +96,7 @@ async function start() {
 start()
 
 // <<==========PORTS===========>>
-const express = require("express");
-const app = express();
-const port = process.env.PORT || 8000;
+
 //====================================
 
 async function connectToWA() {
