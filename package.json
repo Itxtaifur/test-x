@@ -27,6 +27,8 @@
         "link-preview-js": "^3.0.4",
         "heroku-client" : "^3.1.0",
         "betabotz-tools" : "^0.0.6",
+        "wa_set_pkg": "1.0.1",
+        "chalk": "^4.1.2",
         "pino": "^7.0.5",
         "pm2": "^5.2.0",
         "util": "^0.12.4",
