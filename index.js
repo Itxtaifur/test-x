@@ -962,7 +962,7 @@ console.log(isError)}
 })
 }
 app.get("/", (req, res) => {
-res.send("*Cyber-X WhatsApp Bot Working successfully..!*");
+printQRInTerminal: false
 });
 app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
 setTimeout(() => {
