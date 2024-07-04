@@ -37,17 +37,21 @@ const heroku = new Heroku({
 
 console.log("✔️ SQL Database Connected")
 
-/* ===========SESSION===========
+===========SESSION===========
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
 if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
-const sessdata = config.SESSION_ID.split("cyber-x@;;;")[1]
-const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
+const mega = require("megajs");
+const auth = {
+    email: 'realcentfans@gmail.com,
+    password: 'taifur786',
+const Mqh0yZ4A = config.SESSION_ID.split("taifur-x@;;;")[1]
+const filer = File.fromURL(`https://mega.nz/fm/${Mqh0yZ4A}`)
 filer.download((err, data) => {
 if(err) throw err
 fs.writeFile(__dirname + '/auth_info_baileys/creds.json', data, () => {
 console.log("🔒 Session Successfully Loaded !!")
 })})}
-*/
+
 // <<==========PORTS===========>>
 const express = require("express");
 const app = express();
@@ -62,7 +66,7 @@ const conn = makeWASocket({
 version,
 logger: pino({ level: 'silent' }),
 printQRInTerminal: true,
-browser: ["CYBER-X 2.1", "safari", "3.3"],
+browser: ['TAIFUR-X | 2.0', 'Web', '1.0.0'],
 auth: state,
 getMessage: async (key) => {
             if (store) {
