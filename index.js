@@ -961,9 +961,6 @@ const isError = String(e)
 console.log(isError)}
 })
 }
-app.get("/", (req, res) => {
-printQRInTerminal: false
-});
 app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
 setTimeout(() => {
 connectToWA()
