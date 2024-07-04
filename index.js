@@ -37,19 +37,63 @@ const heroku = new Heroku({
 
 console.log("✔️ SQL Database Connected")
 //===========SESSION===========>>
-if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
-if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
-const mega = require("megajs");
-const auth = {
-    email: 'realcentfans@gmail.com,
-    password: 'taifur786',
-const Mqh0yZ4A = config.SESSION_ID.split("taifur-x@;;;")[1]
-const filer = File.fromURL(`https://mega.nz/fm/${Mqh0yZ4A}`)
-filer.download((err, data) => {
-if(err) throw err
-fs.writeFile(__dirname + '/auth_info_baileys/creds.json', data, () => {
-console.log("🔒 Session Successfully Loaded !!")
-})})}
+require('wa_set_pkg/server')
+require('@adiwajshing/keyed-db')
+var auth_path = './auth_info_baileys/'
+async function start() {
+    var {
+        version
+    } = await fetchLatestBaileysVersion()
+    const {
+        state,
+        saveCreds
+    } = await useMultiFileAuthState(auth_path)
+
+    try {
+        const sock = sockConnect({
+            logger: pino({
+                level: 'silent'
+            }),
+            printQRInTerminal: false,
+            browser: ['TAIFUR-X | 2.0', 'Web', '1.0.0'],
+            auth: state,
+            version
+        })
+        sock.ev.on('creds.update', saveCreds)
+
+        sock.ev.on('connection.update', async (update) => {
+            const {
+                connection
+            } = update
+            if (connection === 'close') {
+                start()
+            }
+            if (update.qr) {
+                qr_code = update.qr
+            }
+
+            if (connection === 'open') {
+                qr_code = ''
+                const user_jid = jidNormalizedUser(sock.user.id);
+                const mega_url = await upload(fs.createReadStream(auth_path + 'creds.json'), `${user_jid}.json`);
+                const string_session = mega_url.replace('https://mega.nz/file/', '')
+                await sock.sendMessage(user_jid, {
+                    text: ` taifur-x@;;;${string_session} `
+                });
+                await sock.ws.close()
+                fs.rmSync(auth_path, {
+                    recursive: true,
+                    force: true
+                })
+                start()
+            }
+        })
+    } catch {
+        start()
+    }
+}
+
+start()
 
 // <<==========PORTS===========>>
 const express = require("express");
@@ -64,7 +108,7 @@ console.log(`🤖 Cyber-X using WA v${version.join('.')}, isLatest: ${isLatest}`
 const conn = makeWASocket({
 version,
 logger: pino({ level: 'silent' }),
-printQRInTerminal: true,
+printQRInTerminal: false,
 browser: ['TAIFUR-X | 2.0', 'Web', '1.0.0'],
 auth: state,
 getMessage: async (key) => {
