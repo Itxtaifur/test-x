@@ -929,6 +929,13 @@ reply(util.format(err));
 } catch (e) {
 const isError = String(e)
 console.log(isError)}
+}) 
+} 
+app.get("/", (req, res) => {
+  res.send("*Cyber-X WhatsApp Bot Working successfully..!*");
+  });
+  app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
+  setTimeout(() => {
+  connectToWA()
+  }, 3000);
 })
-}
-                  
