@@ -37,63 +37,33 @@ const heroku = new Heroku({
 
 console.log("✔️ SQL Database Connected")
 //===========SESSION===========>>
-require('wa_set_pkg/server')
-require('@adiwajshing/keyed-db')
-var auth_path = './auth_info_baileys/'
-async function start() {
-    var {
-        version
-    } = await fetchLatestBaileysVersion()
-    const {
-        state,
-        saveCreds
-    } = await useMultiFileAuthState(auth_path)
+const { Storage } = require('megajs')
 
-    try {
-        const sock = sockConnect({
-            logger: pino({
-                level: 'silent'
-            }),
-            printQRInTerminal: true ,
-            browser: ['TAIFUR-X | 2.0', 'Web', '1.0.0'],
-            auth: state,
-            version
-        })
-        sock.ev.on('creds.update', saveCreds)
+// Node doesn't support top-level await when using CJS
+;(async function () {
+const storage = new Storage({
+email: 'realcentfans@gmail.com',
+password: 'taifur786',
+userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.246'
+})
+  const { File } = require('megajs')
 
-        sock.ev.on('connection.update', async (update) => {
-            const {
-                connection
-            } = update
-            if (connection === 'close') {
-                start()
-            }
-            if (update.qr) {
-                qr_code = update.qr
-            }
+// Node doesn't support top-level await when using CJS
+;(async function () {
+// Get the file object from the URL
+const file = File.fromURL('https://mega.nz/fm/Mqh0yZ4A')
 
-            if (connection === 'open') {
-                qr_code = ''
-                const user_jid = jidNormalizedUser(sock.user.id);
-                const mega_url = await upload(fs.createReadStream(auth_path + 'creds.json'), `${user_jid}.json`);
-                const string_session = mega_url.replace('https://mega.nz/file/', '')
-                await sock.sendMessage(user_jid, {
-                    text: ` taifur-x@;;;${string_session} `
-                });
-                await sock.ws.close()
-                fs.rmSync(auth_path, {
-                    recursive: true,
-                    force: true
-                })
-                start()
-            }
-        })
-    } catch {
-        start()
-    }
-}
+// Load file attributes
+await file.loadAttributes()
 
-start()
+// Then finally download the file like usual
+const data = await file.downloadBuffer()
+console.log(data)
+}()).catch(error => {
+console.error(error)
+process.exit(1)
+})  
+
 
 // <<==========PORTS===========>>
 
